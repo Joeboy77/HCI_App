@@ -50,7 +50,47 @@ export default function Home() {
                             <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Computer Science</Text>
                     </Pressable>
                 </View>
+                <View style={styles.boxMain}>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Philosopy</Text>
+                    </Pressable>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Languages</Text>
+                    </Pressable>
+                </View>
             </View>
+            <View style={styles.boxMain}>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Geography</Text>
+                    </Pressable>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Computer Science</Text>
+                    </Pressable>
+                </View>
         </View>
       </>
     )

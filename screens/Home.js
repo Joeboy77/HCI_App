@@ -9,16 +9,47 @@ export default function Home() {
         <>
         <Search />
         <View style={styles.container}>
-            <View style={styles.boxMain}>
-                <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
-                    onPressIn={()=> setIsPressed(true)}
-                    onPressOut={()=>setIsPressed(false)}
-                    >
-                        <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
-                            <Image source={Vector} />
-                        </View>
-                        <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Law</Text>
-                </Pressable>
+            <View >
+                <View style={styles.boxMain}>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Law</Text>
+                    </Pressable>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Politics</Text>
+                    </Pressable>
+                </View>
+                <View style={styles.boxMain}>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Geography</Text>
+                    </Pressable>
+                    <Pressable style={[styles.box1, isPressed && styles.box1Pressed ]}
+                        onPressIn={()=> setIsPressed(true)}
+                        onPressOut={()=>setIsPressed(false)}
+                        >
+                            <View style={[styles.imageBox, isPressed && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, isPressed && styles.lawTextPressed]}>Computer Science</Text>
+                    </Pressable>
+                </View>
             </View>
         </View>
       </>
@@ -29,7 +60,14 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
         paddingTop: 50,
-        paddingLeft: 50
+        paddingLeft: 30,
+        paddingRight: 30
+    },
+    boxMain: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 30
     },
     box1: {
         width: 150,

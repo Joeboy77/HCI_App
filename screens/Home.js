@@ -3,7 +3,7 @@ import { Text, StyleSheet, View, Image, TouchableOpacity, TouchableWithoutFeedba
 import React, { useState } from 'react'
 import Vector from '../assets/images/Vector.png'
 
-export default function Home() {
+export default function Home({ navigation }) {
     
   const [pressedStates, setPressedStates] = useState(Array(8).fill(false));
 
@@ -27,8 +27,10 @@ export default function Home() {
                 <View style={styles.boxMain}>
                     <Pressable 
                         style={[styles.box1, pressedStates[0] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("Law", {name: 'Law'})}
                         onPressIn={() => handlePressIn(0)}
                         onPressOut={() => handlePressOut(0)}
+                        
                         >
                             <View style={[styles.imageBox, pressedStates[0] && styles.imageBoxPressed]}>
                                 <Image source={Vector} />

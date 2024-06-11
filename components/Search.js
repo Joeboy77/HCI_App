@@ -13,7 +13,7 @@ export default function Search(){
 }
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 70,
+        paddingTop: 54,
         paddingLeft: 40
     },
     

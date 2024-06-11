@@ -103,7 +103,8 @@ const styles = StyleSheet.create({
       borderTopLeftRadius: 20,
       borderBottomRightRadius: 20,
       shadowColor: 'rgba(0, 0, 0, 0.25)',
-      shadowOpacity: '2'
+      shadowOpacity: '2',
+      objectFit: 'contain'
     },
     flat: {
       marginTop: 40,
@@ -140,7 +141,7 @@ const styles = StyleSheet.create({
     height: 150,
     marginHorizontal: 10,
     display: 'flex',
-    justifyContent: 'flex-end'
+    justifyContent: 'flex-end',
    },
    data2: {
     marginLeft: 10,
@@ -152,11 +153,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#FDF4EF',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: '#6E4BB5',
    },
    readText: {
     color: '#6E4BB5',
     fontWeight: '500',
-
    }
 })

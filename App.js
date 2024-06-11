@@ -17,8 +17,8 @@ export default function App() {
   const Stack = createStackNavigator()
   return (
     <View style={styles.container}>
-      <Law />
-      {/*
+      
+      
       <NavigationContainer>
         <Stack.Navigator
         screenOptions={
@@ -50,7 +50,7 @@ export default function App() {
           <Stack.Screen name='Clasics' component={Clasics}/>
         </Stack.Navigator>
       </NavigationContainer>
-      */ }
+      
       <StatusBar style="dark" />
     </View>
   );

@@ -1,10 +1,11 @@
-# HCI APP
+## HCI APP
+
 
 The Library App is an expo bassed mobile application designed to facilitate book borrowing and management for libraries.
 The app allows users to browse and search for books, check availability, and reserve books for borrowing. 
 The app also provides features for librarians to manage book collections, track borrowing history, and monitor user activity.
 
-# FEATURES
+## FEATURES
 
 **USER** **FEATURES**
 
@@ -21,7 +22,7 @@ The app also provides features for librarians to manage book collections, track 
 3. Generate reports on book circulation and user engagement
 4. Manage user accounts and permissions
 
-# TECHNICAL REQUIREMENTS
+## TECHNICAL REQUIREMENTS
 
 1. Built using a React Native (Expo)
 2. Utilizes React Native library for building reusable UI components

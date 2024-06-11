@@ -52,6 +52,7 @@ export default function Home({ navigation }) {
                 <View style={styles.boxMain}>
                     <Pressable 
                         style={[styles.box1, pressedStates[2] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("Geograpy", {name: 'Geography'})}
                         onPressIn={() => handlePressIn(2)}
                         onPressOut={() => handlePressOut(2)}
                         >
@@ -62,6 +63,7 @@ export default function Home({ navigation }) {
                     </Pressable>
                     <Pressable 
                         style={[styles.box1, pressedStates[3] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("ComputerScience", {name: 'Computer Science'})}
                         onPressIn={() => handlePressIn(3)}
                         onPressOut={() => handlePressOut(3)}
                         >

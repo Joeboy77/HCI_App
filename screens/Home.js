@@ -39,6 +39,7 @@ export default function Home({ navigation }) {
                     </Pressable>
                     <Pressable 
                         style={[styles.box1, pressedStates[1] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("Politics", {name: 'Politics'})}
                         onPressIn={() => handlePressIn(1)}
                         onPressOut={() => handlePressOut(1)}
                         >

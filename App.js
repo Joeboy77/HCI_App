@@ -42,14 +42,21 @@ export default function App() {
             
           }}
           />
-          <Stack.Screen name='Politics' component={Politics}/>
+          <Stack.Screen name='Politics' component={Politics}
+          options={{
+            title: 'Politics',
+            headerStyle: {
+              backgroundColor: '#6E4BB5',
+            },
+          }}
+          />
           <Stack.Screen name='Geography' component={Geography}/>
           <Stack.Screen name='Computer Science' component={ComputerScience}/>
           <Stack.Screen name='Philosophy' component={Philosophy}/>
           <Stack.Screen name='Languages' component={Languages}/>
           <Stack.Screen name='Clasics' component={Clasics}/>
         </Stack.Navigator>
-      </NavigationContainer>
+      </NavigationContainer> 
       
       <StatusBar style="dark" />
     </View>

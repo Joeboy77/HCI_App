@@ -25,7 +25,7 @@ The app also provides features for librarians to manage book collections, track 
 3. Generate reports on book circulation and user engagement
 4. Manage user accounts and permissions
 
-## TECHNICAL REQUIREMENTS
+## TECHNICAL_REQUIREMENTS
 
 1. Built using a React Native (Expo)
 2. Utilizes React Native library for building reusable UI components

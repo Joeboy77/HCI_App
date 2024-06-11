@@ -1,7 +1,10 @@
-import { Text, View, StyleSheet, FlatList, Image } from 'react-native'
+import { Text, View, StyleSheet, FlatList, Image, ImageBackground } from 'react-native'
 import Search from '../components/Search'
 import bookImage from '../assets/images/lawBlue.png'
 import smallIcon from '../assets/images/smallIcon.png'
+import Law1 from '../assets/images/law1.png'
+import Law2 from '../assets/images/law2.png'
+import Law3 from '../assets/images/law3.png'
 
 export default function Law()  {
   const Books = [
@@ -25,7 +28,18 @@ export default function Law()  {
   const data2 = [
     {
       id: '1',
-      
+      title: 'CRIMINAL LAW',
+      image: Law1
+    },
+    {
+      id: '2',
+      title: 'POLITICAL LAW',
+      image: Law2
+    },
+    {
+      id: '3',
+      title: 'SOCIAL LAW',
+      image: Law3
     }
   ]
     return (
@@ -48,6 +62,20 @@ export default function Law()  {
         <View style={styles.hero}>
           <Image source={smallIcon} style={styles.smallIcon}/>
           <Text style={styles.read}>ALSO READ</Text>
+        </View>
+        <View style={styles.data2}>
+          <FlatList 
+          data={data2}
+          renderItem={({item}) => (
+            <ImageBackground source={item.image} style={styles.flatView}>
+              <View style={styles.titleBox}>
+                <Text style={styles.readText}>{item.title}</Text>
+              </View>
+            </ImageBackground>
+          )}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          />
         </View>
       </View>
       </>
@@ -106,5 +134,29 @@ const styles = StyleSheet.create({
     marginTop: 40,
     gap: 30,
     
+   },
+   flatView: {
+    width: 150,
+    height: 150,
+    marginHorizontal: 10,
+    display: 'flex',
+    justifyContent: 'flex-end'
+   },
+   data2: {
+    marginLeft: 10,
+    marginTop: 40
+   },
+   titleBox: {
+    width: 150,
+    height: 30,
+    backgroundColor: '#FDF4EF',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+   },
+   readText: {
+    color: '#6E4BB5',
+    fontWeight: '500',
+
    }
 })

@@ -52,7 +52,7 @@ export default function Home({ navigation }) {
                 <View style={styles.boxMain}>
                     <Pressable 
                         style={[styles.box1, pressedStates[2] && styles.box1Pressed]}
-                        onPress={()=> navigation.navigate("Geograpy", {name: 'Geography'})}
+                        onPress={()=> navigation.navigate("Geography", {name: 'Geography'})}
                         onPressIn={() => handlePressIn(2)}
                         onPressOut={() => handlePressOut(2)}
                         >
@@ -63,7 +63,7 @@ export default function Home({ navigation }) {
                     </Pressable>
                     <Pressable 
                         style={[styles.box1, pressedStates[3] && styles.box1Pressed]}
-                        onPress={()=> navigation.navigate("ComputerScience", {name: 'Computer Science'})}
+                        onPress={()=> navigation.navigate("ComputerScience", {name: 'ComputerScience'})}
                         onPressIn={() => handlePressIn(3)}
                         onPressOut={() => handlePressOut(3)}
                         >
@@ -87,6 +87,7 @@ export default function Home({ navigation }) {
                     </Pressable>
                     <Pressable 
                         style={[styles.box1, pressedStates[5] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("Languages", {name: 'Languages'})}
                         onPressIn={() => handlePressIn(5)}
                         onPressOut={() => handlePressOut(5)}
                         >
@@ -99,17 +100,8 @@ export default function Home({ navigation }) {
             </View>
             <View style={styles.boxMain}>
                     <Pressable 
-                        style={[styles.box1, pressedStates[6] && styles.box1Pressed]}
-                        onPressIn={() => handlePressIn(6)}
-                        onPressOut={() => handlePressOut(6)}
-                        >
-                            <View style={[styles.imageBox, pressedStates[6] && styles.imageBoxPressed]}>
-                                <Image source={Vector} />
-                            </View>
-                            <Text style={[styles.lawText, pressedStates[6] && styles.lawTextPressed]}>History</Text>
-                    </Pressable>
-                    <Pressable 
                         style={[styles.box1, pressedStates[7] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("Clasics", {name: 'Clasics'})}
                         onPressIn={() => handlePressIn(7)}
                         onPressOut={() => handlePressOut(7)}
                         >
@@ -118,6 +110,18 @@ export default function Home({ navigation }) {
                             </View>
                             <Text style={[styles.lawText, pressedStates[7] && styles.lawTextPressed]}>Clasics</Text>
                     </Pressable>
+                    <Pressable 
+                        style={[styles.box1, pressedStates[6] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("History", {name: 'History'})}
+                        onPressIn={() => handlePressIn(6)}
+                        onPressOut={() => handlePressOut(6)}
+                        >
+                            <View style={[styles.imageBox, pressedStates[6] && styles.imageBoxPressed]}>
+                                <Image source={Vector} />
+                            </View>
+                            <Text style={[styles.lawText, pressedStates[6] && styles.lawTextPressed]}>History</Text>
+                    </Pressable>
+                    
                 </View>
         </View>
         </ScrollView>

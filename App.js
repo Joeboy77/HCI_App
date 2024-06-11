@@ -12,14 +12,13 @@ import Philosophy from './screens/Philosophy'
 import Languages from './screens/Languages'
 import Clasics from './screens/Clasics'
 import Law from './screens/Law';
+import History from './screens/History';
 
 export default function App() {
   const Stack = createStackNavigator()
   return (
     <View style={styles.container}>
-      
-      <Philosophy />
-      {/*<NavigationContainer>
+      <NavigationContainer>
         <Stack.Navigator
         screenOptions={
           {
@@ -52,13 +51,13 @@ export default function App() {
           />
           <Stack.Screen name='Geography' component={Geography}
           options={{
-            title: 'Politics',
+            title: 'Geography',
             headerStyle: {
               backgroundColor: '#6E4BB5',
             },
           }}
           />
-          <Stack.Screen name='Computer Science' component={ComputerScience}
+          <Stack.Screen name='ComputerScience' component={ComputerScience}
           options={{
             title: 'Computer Science',
             headerStyle: {
@@ -74,11 +73,32 @@ export default function App() {
             },
           }}
           />
-          <Stack.Screen name='Languages' component={Languages}/>
-          <Stack.Screen name='Clasics' component={Clasics}/>
+          <Stack.Screen name='Languages' component={Languages}
+          options={{
+            title: 'Languages',
+            headerStyle: {
+              backgroundColor: '#6E4BB5',
+            },
+          }}
+          />
+          <Stack.Screen name='Clasics' component={Clasics}
+          options={{
+            title: 'Clasics',
+            headerStyle: {
+              backgroundColor: '#6E4BB5',
+            },
+          }}
+          />
+          <Stack.Screen name='History' component={History}
+          options={{
+            title: 'History',
+            headerStyle: {
+              backgroundColor: '#6E4BB5',
+            },
+          }}
+          />
         </Stack.Navigator>
-      </NavigationContainer>  */}
-      
+      </NavigationContainer> 
       <StatusBar style="dark" />
     </View>
   );

@@ -2,9 +2,9 @@ import { Text, View, StyleSheet, FlatList, Image, ImageBackground } from 'react-
 import Search from '../components/Search'
 import bookImage from '../assets/images/lawBlue.png'
 import smallIcon from '../assets/images/smallIcon.png'
-import Law1 from '../assets/images/law1.png'
-import Law2 from '../assets/images/law2.png'
-import Law3 from '../assets/images/law3.png'
+import Lan1 from '../assets/images/lan1.jpeg'
+import Lan2 from '../assets/images/lan2.jpeg'
+import Lan3 from '../assets/images/lan3.jpeg'
 
 export default function Languages()  {
   const Books = [
@@ -28,18 +28,18 @@ export default function Languages()  {
   const data2 = [
     {
       id: '1',
-      title: 'CRIMINAL LAW',
-      image: Law1
+      title: 'OUR LANGUAGE',
+      image: Lan1
     },
     {
       id: '2',
-      title: 'POLITICAL LAW',
-      image: Law2
+      title: 'SOCIAL LANGUAGE',
+      image: Lan2
     },
     {
       id: '3',
-      title: 'SOCIAL LAW',
-      image: Law3
+      title: 'EXPRESS LANGUAGE',
+      image: Lan3
     }
   ]
     return (

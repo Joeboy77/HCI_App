@@ -1,5 +1,5 @@
 import Search from '../components/Search'
-import { Text, StyleSheet, View, Image, TouchableOpacity, TouchableWithoutFeedback, Touchable, Pressable } from 'react-native'
+import { Text, StyleSheet, View, Image, TouchableOpacity, TouchableWithoutFeedback, Touchable, Pressable, ScrollView } from 'react-native'
 import React, { useState } from 'react'
 import Vector from '../assets/images/Vector.png'
 
@@ -20,6 +20,7 @@ export default function Home() {
   };
     return (
         <>
+        <ScrollView showsVerticalScrollIndicator={false} >
         <Search />
         <View style={styles.container}>
             <View >
@@ -99,7 +100,7 @@ export default function Home() {
                             <View style={[styles.imageBox, pressedStates[6] && styles.imageBoxPressed]}>
                                 <Image source={Vector} />
                             </View>
-                            <Text style={[styles.lawText, pressedStates[5] && styles.lawTextPressed]}>Geography</Text>
+                            <Text style={[styles.lawText, pressedStates[6] && styles.lawTextPressed]}>History</Text>
                     </Pressable>
                     <Pressable 
                         style={[styles.box1, pressedStates[7] && styles.box1Pressed]}
@@ -109,10 +110,11 @@ export default function Home() {
                             <View style={[styles.imageBox, pressedStates[7] && styles.imageBoxPressed]}>
                                 <Image source={Vector} />
                             </View>
-                            <Text style={[styles.lawText, pressedStates[7] && styles.lawTextPressed]}>Computer Science</Text>
+                            <Text style={[styles.lawText, pressedStates[7] && styles.lawTextPressed]}>Clasics</Text>
                     </Pressable>
                 </View>
         </View>
+        </ScrollView>
       </>
     )
   

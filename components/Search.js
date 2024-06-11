@@ -6,7 +6,7 @@ export default function Search(){
         <SafeAreaView>
             <View style={styles.container}>
                 <View style={styles.searchInput}>
-                    <TextInput placeholder='Book Title' style={styles.input}/>
+                    <TextInput placeholder='Book Title'  returnKeyType='search' style={styles.input}/>
                     <EvilIcons name="search" size={24} color="black" style={{marginTop: -35, marginLeft: 10}}/>
                 </View>
             </View>

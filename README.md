@@ -1,5 +1,8 @@
-## HCI APP
+# HCI APP
 
+## TABLE OF CONTENTS
+- [FEATURES](#FEATURES)
+- [TECNICAL REQUIREMENTS](#TECHNICAL_REQUIREMENTS)
 
 The Library App is an expo bassed mobile application designed to facilitate book borrowing and management for libraries.
 The app allows users to browse and search for books, check availability, and reserve books for borrowing. 

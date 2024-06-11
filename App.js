@@ -27,6 +27,11 @@ export default function App() {
           }
         }
         >
+          <Stack.Screen name='Welcome' component={Landing}
+          options={{
+            headerShown: false
+          }}
+          />
           <Stack.Screen name='Home' component={Home}
           options={{
             headerShown: false

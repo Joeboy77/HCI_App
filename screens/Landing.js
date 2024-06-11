@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native'
 import image1 from '../assets/images/image1.png'
 
-export default function Landing() {
+export default function Landing({ navigation }) {
     return(
         <View style={styles.container}>
             <ImageBackground source={image1} style={styles.background}>
@@ -12,7 +12,9 @@ export default function Landing() {
                 <Text style={styles.welcome}>Ready to start your next reading</Text>
                 <Text style={styles.welcome}> adventure?</Text>
                 </View>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button} 
+                onPress={()=> navigation.navigate("Home", {name: 'Home'})}
+                >
                     <Text style={styles.get}>Get Started</Text>
                 </TouchableOpacity>
                 </View>

@@ -18,7 +18,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       
-      <ComputerScience />
+      <Philosophy />
       {/*<NavigationContainer>
         <Stack.Navigator
         screenOptions={
@@ -66,7 +66,14 @@ export default function App() {
             },
           }}
           />
-          <Stack.Screen name='Philosophy' component={Philosophy}/>
+          <Stack.Screen name='Philosophy' component={Philosophy}
+          options={{
+            title: 'Philosophy',
+            headerStyle: {
+              backgroundColor: '#6E4BB5',
+            },
+          }}
+          />
           <Stack.Screen name='Languages' component={Languages}/>
           <Stack.Screen name='Clasics' component={Clasics}/>
         </Stack.Navigator>

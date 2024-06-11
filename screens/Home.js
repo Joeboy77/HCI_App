@@ -76,6 +76,7 @@ export default function Home({ navigation }) {
                 <View style={styles.boxMain}>
                     <Pressable 
                         style={[styles.box1, pressedStates[4] && styles.box1Pressed]}
+                        onPress={()=> navigation.navigate("Philosopy", {name: 'Philosophy'})}
                         onPressIn={() => handlePressIn(4)}
                         onPressOut={() => handlePressOut(4)}
                         >

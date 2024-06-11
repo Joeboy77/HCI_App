@@ -17,11 +17,14 @@ export default function App() {
   const Stack = createStackNavigator()
   return (
     <View style={styles.container}>
+      <Law />
+      {/*
       <NavigationContainer>
         <Stack.Navigator
         screenOptions={
           {
-              cardStyle: {backgroundColor: '#fff'}
+              cardStyle: {backgroundColor: '#fff'},
+              headerTintColor: '#fff'
           }
         }
         >
@@ -30,7 +33,15 @@ export default function App() {
             headerShown: false
           }}
           />
-          <Stack.Screen name='Law' component={Law}/>
+          <Stack.Screen name='Law' component={Law}
+          options={{
+            title: 'Law',
+            headerStyle: {
+              backgroundColor: '#6E4BB5',
+            },
+            
+          }}
+          />
           <Stack.Screen name='Politics' component={Politics}/>
           <Stack.Screen name='Geography' component={Geography}/>
           <Stack.Screen name='Computer Science' component={ComputerScience}/>
@@ -39,6 +50,7 @@ export default function App() {
           <Stack.Screen name='Clasics' component={Clasics}/>
         </Stack.Navigator>
       </NavigationContainer>
+      */ }
       <StatusBar style="dark" />
     </View>
   );

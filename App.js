@@ -13,10 +13,12 @@ import Languages from './screens/Languages'
 import Clasics from './screens/Clasics'
 import Law from './screens/Law';
 import History from './screens/History';
+import { ClerkProvider } from '@clerk/clerk-expo';
 
 export default function App() {
   const Stack = createStackNavigator()
   return (
+    <ClerkProvider>
     <View style={styles.container}>
       <NavigationContainer>
         <Stack.Navigator
@@ -106,6 +108,7 @@ export default function App() {
       </NavigationContainer> 
       <StatusBar style="dark" />
     </View>
+    </ClerkProvider>
   );
 }
 

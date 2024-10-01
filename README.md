@@ -49,6 +49,6 @@ The app also provides features for librarians to manage book collections, track 
 The Library App is licensed under the `MIT License`. See LICENSE file for details.
 
 **CONTACT**
-For any questions, issues, or feedback, please contact Joseph Acheampong at joseph.ecktech@gmail.com
+For any questions, issues, or feedback, please contact Joseph Acheampong at acheampongjoseph470@gmail.com
 
    

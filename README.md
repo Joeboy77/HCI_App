@@ -51,4 +51,6 @@ The Library App is licensed under the `MIT License`. See LICENSE file for detail
 **CONTACT**
 For any questions, issues, or feedback, please contact Joseph Acheampong at acheampongjoseph470@gmail.com
 
+**Update coming soon...**
+
    
